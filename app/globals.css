@@ -1,0 +1,77 @@
+
+@import "tailwindcss";
+
+/* CORES E FONTES DO PROJETO */
+:root {
+  --background: #f7f2e8;
+  --foreground: #102c23;
+
+  --font-heading: var(--font-cormorant);
+  --font-body: var(--font-manrope);
+}
+
+/* TAILWIND CSS */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-cormorant);
+}
+
+/* CONFIGURAÇÕES GERAIS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  font-family: var(--font-body), Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* TÍTULOS */
+h1,
+h2,
+h3,
+.font-serif {
+  font-family: var(--font-heading), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+/* ELEMENTOS DE INTERFACE */
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body), Arial, sans-serif;
+}
+
+/* IMAGENS */
+img {
+  max-width: 100%;
+}
+
+/* SELEÇÃO DE TEXTO */
+::selection {
+  background: #c7a35a;
+  color: #102c23;
+}
+
+/* ACESSIBILIDADE */
+:focus-visible {
+  outline: 2px solid #c7a35a;
+  outline-offset: 3px;
+}
+
+/* ACESSIBILIDADE PARA ANIMAÇÕES */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
