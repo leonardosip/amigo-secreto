@@ -2,8 +2,10 @@
 import { NextResponse } from "next/server";
 import { getSession } from "@/lib/auth";
 import { getSupabaseAdmin } from "@/lib/supabase/admin";
+import { connection } from "next/server";
 
 export async function GET() {
+  await connection();
   try {
     const session = await getSession();
 
