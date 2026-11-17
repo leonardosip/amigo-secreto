@@ -9,6 +9,7 @@ const memorias = [
   { ano: 2020, foto: "/memorias/2020.jpg" },
   { ano: 2021, foto: "/memorias/2021.jpg" },
   { ano: 2022, foto: "/memorias/2022.jpg" },
+  { ano: 2023, foto: "/memorias/2023.jpg" },
   { ano: 2024, foto: "/memorias/2024.jpg" },
   { ano: 2025, foto: "/memorias/2025.jpg" },
 ];
