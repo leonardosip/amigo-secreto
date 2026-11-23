@@ -137,8 +137,8 @@ export async function PATCH(request: NextRequest) {
     );
   }
 
-  // Por enquanto, só permitimos alterações antes do sorteio.
-  if (event.status !== "registration") {
+  // Permite editar antes e depois do sorteio, até o evento ser finalizado.
+  if (event.status !== "registration" && event.status !== "drawn") {
     return NextResponse.json(
       { error: "As edições deste evento estão encerradas." },
       { status: 403 }

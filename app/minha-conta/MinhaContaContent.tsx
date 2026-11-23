@@ -60,7 +60,7 @@ export default async function MinhaContaPage() {
   }
 
   const isDrawn = event.status === "drawn";
-  const canEdit = event.status === "registration";
+  const canEdit = event.status === "registration" || isDrawn;
 
   return (
     <main className="min-h-screen overflow-x-clip bg-[#F7F2E8] text-[#102C23]">
